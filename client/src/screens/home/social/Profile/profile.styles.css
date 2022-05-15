@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Numans&family=Oxanium:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=VT323&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* COLORES */
+    --color-body: #F3F6FD;
+    --color-navbar: #666DF8;
+    --blanco: #FFFFFF;
+
+    --color-input-bg: #F3F3F3;
+    --color-input-border: #B7B7B7;
+    --color-input-text: #A2A2A2;
+    --color-input-text-active: #66686F;
+    --color-text: #5A5A5A;
+    --color-texto: #262626;
+
+    --color-amarillo: #FFDC39;
+    --amarillo: #E4A101;
+    --yellow: #ffbe1a;
+    --morado: #666DF8;
+    --verde: #c8ff0b;
+    --blue: #01abe9;
+    --twitter: #4ac7ec;
+    --linkedin: #156AA0;
+    --github: #6242EE;
+    --dribbble: #F64F92;
+    --pink: #ff5da0;
+    --success: #1ecab8;
+    --danger: #f1646c;
+    --azul: #4d79f8;
+
+    --naranja: #ffa260;
+    --amarisho: #e5ff60;
+    --rosa: #ef6eae;
+
+    /* GRADIENTE 1 */
+    --color-g1-primary: #408BEE;
+    --color-g1-secondary: #6B36F8;
+
+    /*GRADIENTE 2*/
+    --color-g2-primary: #FA9042;
+    --color-g2-secondary: #E1392E;
+
+    /*GRADIENTE 3*/
+    --color-g3-primary: #F87D5C;
+    --color-g3-secondary: #F65B75;
+
+    /* SOMBRAS */
+    --sombra-cont-login: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    --sombra-header: 0 0px 15px rgba(106, 54, 248, 0.5);
+    --sombra-submenu: 0 5px 30px #00000093;
+
+    /*FONTS*/
+    --Font-FiraCode: 'Fira Code', monospace;
+    --Font-IBMPlexSans: 'IBM Plex Sans', sans-serif;
+    --Font-LibreFranklin: 'Libre Franklin', sans-serif;
+    --Font-Mulish: 'Mulish', sans-serif;
+    --Font-Numans: 'Numans', sans-serif;
+    --Font-Oxanium: 'Oxanium', cursive;
+    --Font-Poppins: 'Poppins', sans-serif;
+    --Font-PressStart: 'Press Start 2P', cursive;
+    --Font-Prompt: 'Prompt', sans-serif;
+    --Font-Raleway: 'Raleway', sans-serif;
+    --Font-Rubik: 'Rubik', sans-serif;
+    --Font-SourceSans3: 'Source Sans 3', sans-serif;
+    --Font-Ubuntu: 'Ubuntu', sans-serif;
+    --Font-VT323: 'VT323', monospace;
+    --Font-WorkSans: 'Work Sans', sans-serif;
+}
+
+main.main__profile {
+    background: var(--blanco);
+    box-shadow: var(--sombra-cont-login);
+    padding: 2rem 6rem;
+}
+
+.main__profile .perfil {
+    width: 100%;
+    max-width: 1129px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 210px calc(100% - 210px);
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.main__profile .perfil .contenedor__avatar {
+    width: 210px;
+    height: 210px;
+    background: linear-gradient(120deg, var(--color-g1-primary), var(--color-g1-secondary));
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.main__profile .perfil .contenedor__avatar .avatar {
+    width: 190px;
+    height: 190px;
+    background: var(--blanco);
+    border-radius: 50%;
+
+    overflow: hidden;
+}
+
+.main__profile .perfil .contenedor__avatar .avatar img {
+    width: 190px;
+    height: 190px;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.main__profile .perfil .contenedor__avatar .settings {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+
+    width: 40px;
+    height: 40px;
+    background: var(--color-navbar);
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+    transition: all 0.25s ease-in-out;
+}
+
+.main__profile .perfil .contenedor__avatar .settings a {
+    color: var(--blanco);
+    font-size: 1.3rem;
+    transition: all 0.25s ease-in-out;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__profile .perfil .contenedor__avatar .settings:hover {
+    background: var(--blanco);
+}
+
+.main__profile .perfil .contenedor__avatar .settings:hover a {
+    color: var(--color-g1-secondary);
+    transform: rotate(90deg);
+}
+
+.main__profile .perfil .contenedor__info h3.username {
+    color: var(--color-navbar);
+    font-weight: 500;
+    line-height: 0.7rem;
+}
+
+.main__profile .perfil .contenedor__info span.role {
+    font-size: .9em;
+    opacity: 0.9;
+}
+
+.main__profile .perfil .contenedor__info .seguidores a {
+    color: var(--color-text);
+    margin-right: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.main__profile .perfil .contenedor__info .seguidores a:nth-of-type(1) {
+    cursor: default;
+}
+
+
+.main__profile .perfil .contenedor__info .seguidores a span:nth-child(1) {
+    font-weight: 700;
+    margin-right: 0.2rem;
+    opacity: .9;
+}
+
+.main__profile .perfil .contenedor__info .seguidores a span:nth-child(2) {
+    opacity: .8;
+    font-weight: 500;
+}
+
+.main__profile .perfil .contenedor__info .info h4.nombre {
+    font-weight: 600;
+    line-height: 0rem;
+}
+
+.main__profile .perfil .contenedor__info .info p {
+    font-size: .895rem;
+    line-height: 1.2rem;
+    color: var(--color-text);
+    opacity: .9;
+    padding-right: 1.5rem;
+}
+
+.main__profile .perfil .contenedor__info .social {
+    display: flex;
+    gap: .6rem;
+}
+
+.main__profile .perfil .contenedor__info .social a {
+    width: 35px;
+    height: 35px;
+    background: var(--color-text);
+    color: var(--blanco);
+    border-radius: 50%;
+    font-size: 1.1rem;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__profile .perfil .contenedor__info .social a.website {
+    background: var(--morado);
+}
+
+.main__profile .perfil .contenedor__info .social a.linkedin {
+    background: var(--linkedin);
+}
+
+.main__profile .perfil .contenedor__info .social a.dribbble {
+    background: var(--dribbble);
+}
+
+.main__profile .perfil .contenedor__info .social a.github {
+    background: var(--github);
+}
+
+.main__profile .feed {
+    margin-top: 2em;
+}
+
+.main__profile .feed .feed__title {
+    width: 100%;
+    max-width: 1129px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__profile .feed .feed__title h2 {
+    line-height: 0rem;
+    font-family: var(--Font-Raleway);
+    color: var(--color-text);
+    opacity: .9;
+}
+
+.main__profile .feed .feed__content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main__profile .feed .feed__wrapper {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1vw;
+}
+
+.main__profile .feed .feed__wrapper a.post {
+    background: var(--color-body);
+    height: 270px;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.main__profile .feed .feed__wrapper a.post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+    transform: scale(1.2);
+    opacity: 1;
+
+    transition: all 0.25s ease-in-out;
+}
+
+.main__profile .feed .feed__wrapper a.post:hover img {
+    transform: scale(1);
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 1275px) {
+    .main__profile .feed .feed__wrapper {
+        grid-template-columns: repeat(3, 270px);
+    }
+}
+
+@media screen and (max-width: 1169px) {
+    .main__profile .feed .feed__wrapper {
+        gap: .25em;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 945px) {
+    main.main__profile {
+        padding: 2rem 2rem;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    main.main__profile {
+        padding: 1rem 1rem;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .main__profile .perfil {
+        width: 100%;
+        max-width: 100%;
+        display: block;
+    }
+
+    .main__profile .perfil .contenedor__avatar {
+        margin: 0 auto;
+    }
+
+    .main__profile .perfil .contenedor__info {
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .main__profile .perfil .contenedor__info .social {
+        justify-content: center;
+    }
+
+    .main__profile .feed .feed__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .main__profile .feed .feed__wrapper a.post {
+        width: 100%;
+        height: calc((100vw / 3));
+    }
+
+    .main__profile .perfil .contenedor__info .seguidores a {
+        margin-right: 1rem;
+    }
+}

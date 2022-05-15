@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Numans&family=Oxanium:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=VT323&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* COLORES */
+    --color-body: #F3F6FD;
+    --color-navbar: #666DF8;
+    --blanco: #FFFFFF;
+    --btn-secondary: #6E7D88;
+    --btn-light: #d2d2d2;
+    --color-accordion-disabled: #DEE4FE;
+
+    --color-input-bg: #F3F3F3;
+    --color-input-border: #B7B7B7;
+    --color-input-text: #A2A2A2;
+    --color-input-text-active: #66686F;
+    --color-text: #5A5A5A;
+    --color-texto: #262626;
+    --color-titles: #868686;
+    --color-text-button-light: #C1C1C1;
+    --color-shadow-button-light: #C4C4C4;
+
+    --color-dark-content: #262228;
+
+    --color-amarillo: #FFDC39;
+    --amarillo: #E4A101;
+    --yellow: #ffbe1a;
+    --morado: #666DF8;
+    --verde: #c8ff0b;
+    --blue: #01abe9;
+    --twitter: #4ac7ec;
+    --linkedin: #156AA0;
+    --github: #6242EE;
+    --dribbble: #F64F92;
+    --pink: #ff5da0;
+    --success: #1ecab8;
+    --danger: #f1646c;
+    --edit: #ffd900;
+    --azul: #4d79f8;
+
+    --naranja: #ffa260;
+    --amarisho: #e5ff60;
+    --rosa: #ef6eae;
+
+    /* GRADIENTE 1 */
+    --color-g1-primary: #408BEE;
+    --color-g1-secondary: #6B36F8;
+
+    /*GRADIENTE 2*/
+    --color-g2-primary: #FA9042;
+    --color-g2-secondary: #E1392E;
+
+    /*GRADIENTE 3*/
+    --color-g3-primary: #F87D5C;
+    --color-g3-secondary: #F65B75;
+
+    /* SOMBRAS */
+    --sombra-cont-login: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    --sombra-header: 0 0px 15px rgba(106, 54, 248, 0.5);
+    --sombra-submenu: 0 5px 30px #00000093;
+
+    /*FONTS*/
+    --Font-FiraCode: 'Fira Code', monospace;
+    --Font-IBMPlexSans: 'IBM Plex Sans', sans-serif;
+    --Font-LibreFranklin: 'Libre Franklin', sans-serif;
+    --Font-Mulish: 'Mulish', sans-serif;
+    --Font-Numans: 'Numans', sans-serif;
+    --Font-Oxanium: 'Oxanium', cursive;
+    --Font-Poppins: 'Poppins', sans-serif;
+    --Font-PressStart: 'Press Start 2P', cursive;
+    --Font-Prompt: 'Prompt', sans-serif;
+    --Font-Raleway: 'Raleway', sans-serif;
+    --Font-Rubik: 'Rubik', sans-serif;
+    --Font-SourceSans3: 'Source Sans 3', sans-serif;
+    --Font-Ubuntu: 'Ubuntu', sans-serif;
+    --Font-VT323: 'VT323', monospace;
+    --Font-WorkSans: 'Work Sans', sans-serif;
+    --Font-Lato: 'Lato', sans-serif;
+}
+
+.swal2-popup {
+    font-family: var(--Font-Poppins);
+}

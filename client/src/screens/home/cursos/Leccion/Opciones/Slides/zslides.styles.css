@@ -1,0 +1,181 @@
+@import url("../../../../../../styles/const.css");
+
+/*SLIDER CONTAINER*/
+.main__leccion section.slider-container {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.main__leccion section.slider-container .slider-content {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.main__leccion section.slider-container .slider-content .slide {
+    width: 100%;
+    position: relative;
+    background: var(--blanco);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-family: var(--Font-Mulish);
+}
+
+section.slider-container .slide hr {
+    width: 100%;
+    margin: 2em 0 1.5em;
+    border: 1px solid var(--btn-light);
+}
+
+section.slider-container .slide .funciones {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.slider-container .slide .funciones .left {
+    display: flex;
+    gap: .25em;
+}
+
+section.slider-container .slide .funciones .right {
+    display: flex;
+    justify-content: flex-end;
+    gap: .5em;
+}
+
+section.slider-container .slide .funciones button.speaker,
+section.slider-container .slide .funciones button.copy {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 500px;
+    border: 3px solid var(--color-navbar);
+    color: var(--color-navbar);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 24px;
+}
+
+section.slider-container .slide .funciones .right button {
+    height: 40px;
+    padding: 0 20px;
+    text-align: center;
+    background: linear-gradient(45deg, var(--color-g1-primary), var(--color-g1-secondary));
+    color: var(--blanco);
+    border-radius: 500px;
+    transition: all 0.3s;
+    font-weight: 500;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 1rem;
+}
+
+section.slider-container .slide .funciones .right button i {
+    font-size: 1.2rem;
+}
+
+section.slider-container .slide .funciones .right button.previous {
+    background: none;
+    color: var(--color-input-text);
+    border: 3px solid var(--color-input-border);
+}
+
+section.slider-container .slide .funciones .right button.finish {
+    border-radius: 6px;
+}
+
+section.slider-container .slide,
+section.slider-container .slide * {
+    opacity: 0;
+    height: 0px;
+    width: 0px;
+    overflow: hidden;
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.3s linear;
+}
+
+.main__leccion section.slider-container .slider-content .slide.active {
+    padding: 20px;
+}
+
+section.slider-container .slide.active,
+section.slider-container .slide.active * {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    width: auto;
+}
+
+/*SLIDE NORMAL*/
+section.slider-container .slide-normal .contenido {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+
+}
+
+section.slider-container .slide-normal .contenido .left {
+    flex: 1;
+}
+
+section.slider-container .slide-normal .contenido .left h1 {
+    color: var(--color-titles-slides);
+    font-weight: 700;
+    font-size: 23px;
+}
+
+section.slider-container .slide-normal .contenido .left p {
+    color: var(--color-text-slides);
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 1rem;
+}
+
+section.slider-container .slide-normal .contenido .left p br {
+    height: 2px;
+}
+
+section.slider-container .slide-normal .contenido .left p a {
+    color: var(--color-normal-button);
+}
+
+section.slider-container .slide-normal .contenido .left p b {
+    font-weight: 700;
+}
+
+section.slider-container .slide-normal .contenido .right {
+    flex: 0 0 45%;
+    position: relative;
+    overflow: hidden;
+    height: 24em;
+}
+
+section.slider-container .slide-normal .contenido .right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    text-align: center;
+    transition: all 0.3 ease-in-out;
+}
+
+section.slider-container .slide .show__img:hover {
+    cursor: pointer;
+}
+
+/*SLIDE VIDEO*/
+section.slider-container .slide-video .contenido .video-container {
+    background-color: rgba(244, 244, 244, 0.7);
+    height: 24em;
+}
+
+section.slider-container .slide-video .contenido .video-container #video-player {
+    width: 100%;
+    height: 100%;
+}

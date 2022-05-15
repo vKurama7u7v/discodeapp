@@ -1,0 +1,144 @@
+@import url("../../../../styles/const.css");
+
+main.main__home-social {
+    padding: 2em 0;
+}
+
+main.main__home-social * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main.main__home-social .contenedor__feed {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    gap: 2em;
+}
+
+main.main__home-social .contenedor__feed .card-post {
+    width: 600px;
+    background: var(--blanco);
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 8px;
+}
+
+main.main__home-social .contenedor__feed .header__post {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main.main__home-social .contenedor__feed .header__post a.profile {
+    color: var(--color-text);
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+main.main__home-social .contenedor__feed .header__post a.profile .avatar {
+    height: 38px;
+    width: 38px;
+    outline: 2px solid var(--color-navbar);
+    border-radius: 500em;
+
+    overflow: hidden;
+}
+
+main.main__home-social .contenedor__feed .header__post a.profile .avatar img {
+    width: 38px;
+    height: 38px;
+    object-fit: cover;
+}
+
+main.main__home-social .contenedor__feed .header__post a.profile .perfil {
+    line-height: 15px;
+    font-size: 15px;
+}
+
+main.main__home-social .contenedor__feed .header__post a.profile .perfil p.name {
+    font-weight: 600;
+    transition: all 0.25s ease-in-out;
+}
+
+main.main__home-social .contenedor__feed .header__post a.profile:hover .perfil p.name {
+    color: var(--color-navbar);
+}
+
+main.main__home-social .contenedor__feed .header__post a.profile .perfil p.username {
+    font-size: 12px;
+    font-weight: 500;
+    opacity: .6;
+}
+
+main.main__home-social .contenedor__feed .header__post a.view-more {
+    color: var(--color-text);
+    font-weight: 500;
+    font-size: 16px;
+    opacity: .7;
+    transition: all 0.25s ease-in-out;
+}
+
+main.main__home-social .contenedor__feed .header__post a.view-more:hover {
+    opacity: 1;
+    color: var(--color-navbar);
+}
+
+main.main__home-social .contenedor__feed .content__post {
+    width: 100%;
+    height: 26em;
+    background: rgb(196, 196, 196, 0.2);
+    overflow: hidden;
+    text-align: center;
+}
+
+main.main__home-social .contenedor__feed .content__post img {
+    width: 100%;
+    height: 26em;
+    object-fit: cover;
+    object-position: center;
+}
+
+main.main__home-social .contenedor__feed .desc__post {
+    padding: .5em 1em;
+}
+
+main.main__home-social .contenedor__feed .desc__post .counters__section {
+    display: flex;
+    gap: 1.3em;
+    font-size: 15px;
+    color: var(--color-texto);
+    font-weight: 500;
+
+    padding-bottom: .25em;
+}
+
+main.main__home-social .contenedor__feed .desc__post .counters__section div {
+    display: flex;
+    gap: .3em;
+    align-items: center;
+    transition: all 0.25s ease-in-out;
+}
+
+main.main__home-social .contenedor__feed .desc__post .counters__section div span {
+    opacity: .8;
+}
+
+main.main__home-social .contenedor__feed .desc__post .counters__section .likes {
+    cursor: pointer;
+}
+
+main.main__home-social .contenedor__feed .desc__post .counters__section .likes:hover i,
+main.main__home-social .contenedor__feed .desc__post .counters__section .likes.active i {
+    color: var(--color-g1-secondary);
+    text-shadow: 0px 0px 2px var(--color-g1-secondary);
+}
+
+main.main__home-social .contenedor__feed .desc__post .desc__section {
+    font-size: 13.5px;
+    opacity: .8;
+    padding-bottom: .5em;
+    text-align: justify;
+}

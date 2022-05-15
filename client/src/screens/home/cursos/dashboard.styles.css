@@ -1,0 +1,166 @@
+@import url("../../../styles/const.css");
+
+main.dashboard {
+    font-family: var(--Font-Poppins);
+    padding: 1em 0em;
+}
+
+.dashboard .opciones__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard .opciones__header .filtro__secciones {
+    display: flex;
+    gap: .5em;
+    align-items: center;
+}
+
+.dashboard .opciones__header .filtro__secciones .categoria {
+    background: linear-gradient(75deg, var(--color-g1-primary), var(--color-g1-secondary));
+    color: var(--blanco);
+    padding: .2em 1em;
+    border-radius: 500em;
+    font-weight: 500;
+    transition: all .25s ease-in-out;
+}
+
+.dashboard .opciones__header .filtro__secciones .categoria:hover {
+    box-shadow: 0px 0px 10px rgb(38, 38, 38, .3);
+}
+
+.dashboard .opciones__header .buscar__cursos {
+    height: 2.5em;
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.dashboard .opciones__header .buscar__cursos input {
+    width: calc(100% - 2.5em);
+    outline: none;
+    background: var(--blanco);
+    border: 2px solid var(--color-input-border);
+    height: 100%;
+    padding-left: .7em;
+    border-radius: 6px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    font-family: var(--Font-Raleway);
+    font-weight: 600;
+    color: var(--color-input-text-active);
+    transition: all 0.25s ease-in-out;
+}
+
+.dashboard .opciones__header .buscar__cursos input:focus {
+    border: 2px solid var(--color-navbar);
+}
+
+.dashboard .opciones__header .buscar__cursos button.btn-search {
+    outline: none;
+    border: none;
+    background: var(--color-navbar);
+    color: var(--blanco);
+    transition: all 0.25s ease-in-out;
+    height: 100%;
+    width: 2.5em;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+.dashboard .opciones__header .buscar__cursos button.btn-search:hover {
+    background: var(--color-g1-primary);
+}
+
+.dashboard .section__cursos h1.title {
+    color: var(--color-titles);
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.dashboard .section__cursos .grid__cursos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.2em;
+}
+
+.dashboard .section__cursos .grid__cursos .item {
+    background: var(--blanco);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 5px;
+    position: relative;
+    transition: all 0.25s ease-in-out;
+}
+
+.dashboard .section__cursos .grid__cursos .item:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.dashboard .section__cursos .grid__cursos .item .thumbnail {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.dashboard .section__cursos .grid__cursos .item .thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.dashboard .section__cursos .grid__cursos .item .category {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background: linear-gradient(45deg, var(--color-g1-secondary), var(--color-g1-primary));
+    color: var(--blanco);
+    font-weight: 600;
+    padding: .25em 1em;
+    line-height: 1.2em;
+    font-size: .9em;
+    border: 3px solid var(--blanco);
+    border-right: 0px solid transparent;
+    border-radius: 500px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 5px rgb(38, 38, 38, .5);
+}
+
+.dashboard .section__cursos .grid__cursos .item .description {
+    padding: .7em .7em .25em .7em;
+}
+
+.dashboard .section__cursos .grid__cursos .item .description h3.name {
+    color: var(--color-text);
+    font-weight: 600;
+    transition: all 0.25s ease-in-out;
+    line-height: 1em;
+}
+
+.dashboard .section__cursos .grid__cursos .item:hover .description h3.name {
+    color: var(--color-navbar);
+}
+
+.dashboard .section__cursos .grid__cursos .item .description .puntuacion {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    color: var(--color-input-text);
+}
+
+.dashboard .section__cursos .grid__cursos .item .description .puntuacion span {
+    padding-right: .25em;
+}
+
+.dashboard .section__cursos .grid__cursos .item .description .puntuacion i {
+    font-size: 10px;
+}

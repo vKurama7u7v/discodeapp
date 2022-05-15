@@ -1,0 +1,16 @@
+"https://onecompiler.com/embed/${languaje}/3wyne344h"
+=> One Compiler
+Schema:
+{
+    "language": "python",
+    "files": [
+        {
+            "name": "main.py",
+            "content": "print(\"Hello, World!\")",
+        }
+        {
+            "name": "file.extension",
+            "content": "//Code"
+        }
+    ]
+}

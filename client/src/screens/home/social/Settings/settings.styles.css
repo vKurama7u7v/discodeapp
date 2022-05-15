@@ -1,0 +1,257 @@
+@import url("../../../../styles/const.css");
+
+main.settings {
+    margin: 0 auto;
+}
+
+main.settings .settings__wrapper {
+    display: grid;
+    grid-template-columns: 280px calc(100% - 280px);
+    gap: .8rem;
+}
+
+main.settings .settings__wrapper .left,
+main.settings .settings__wrapper .right {
+    padding: 1rem;
+}
+
+main.settings .settings__wrapper .left {
+    max-height: 380px;
+}
+
+main.settings .settings__wrapper .left .cont__avatar {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    width: 210px;
+    height: 210px;
+    background: linear-gradient(120deg, var(--color-g1-primary), var(--color-g1-secondary));
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px var(--color-g1-secondary);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+main.settings .settings__wrapper .left .cont__avatar .avatar {
+    width: 190px;
+    height: 190px;
+    background: var(--blanco);
+    border-radius: 50%;
+
+    overflow: hidden;
+}
+
+main.settings .settings__wrapper .left .cont__avatar .avatar img {
+    width: 190px;
+    height: 190px;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+main.settings .settings__wrapper .left .cont__avatar .change-pic {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+
+    width: 40px;
+    height: 40px;
+    background: var(--color-navbar);
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+    transition: all 0.25s ease-in-out;
+}
+
+main.settings .settings__wrapper .left .cont__avatar .change-pic button {
+    color: var(--blanco);
+    font-size: 1.3rem;
+    transition: all 0.25s ease-in-out;
+
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main.settings .settings__wrapper .left .cont__avatar .change-pic button:hover {
+    color: var(--color-amarillo);
+}
+
+
+button.reset {
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-right: 1rem;
+    transition: all 0.25s ease-in-out;
+}
+
+button.btn-primary {
+    font-family: var(--Font-Raleway);
+    background: var(--color-g1-secondary);
+    padding: .8em 1.5em;
+    color: var(--blanco);
+    border-radius: 5px;
+    font-weight: 600;
+    font-family: 1.1rem;
+}
+
+button.btn-secondary {
+    font-family: var(--Font-Raleway);
+    background: var(--btn-secondary);
+    padding: .8em 1.5em;
+    color: var(--blanco);
+    border-radius: 5px;
+    font-weight: 600;
+    font-family: 1.1rem;
+}
+
+button.btn-danger {
+    font-family: var(--Font-Raleway);
+    background: var(--danger);
+    padding: .8em 1.5em;
+    color: var(--blanco);
+    border-radius: 5px;
+    font-weight: 600;
+    font-family: 1.1rem;
+}
+
+button.width-100 {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1em;
+}
+
+main.settings .settings__wrapper .right .form {
+    margin-bottom: 2rem;
+}
+
+main.settings .settings__wrapper .right hr {
+    opacity: .4;
+    margin-bottom: 3rem;
+}
+
+main.settings .settings__wrapper .right .form h2 {
+    line-height: 0;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color: var(--color-text);
+    opacity: .9;
+    font-weight: 600;
+    letter-spacing: .5px
+}
+
+main.settings .settings__wrapper .right form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+main.settings .settings__wrapper .right form .form__div {
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 0rem;
+}
+
+main.settings .settings__wrapper .right form .form__div.buttons,
+main.settings .settings__wrapper .right form .form__div.textarea {
+    grid-column-start: span 2;
+}
+
+main.settings .settings__wrapper .right form .form__div .form__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--color-input-text);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: inherit;
+    color: var(--color-input-text);
+    outline: none;
+    background: var(--blanco);
+    padding: 1.25rem;
+}
+
+main.settings .settings__wrapper .right form .form__div .form__input:hover {
+    border-color: var(--color-navbar);
+}
+
+main.settings .settings__wrapper .right form .form__div .form__input:focus {
+    border-color: var(--color-navbar);
+    color: var(--color-input-text-active);
+}
+
+main.settings .settings__wrapper .right form .form__div .form__label {
+    position: absolute;
+    left: .8rem;
+    top: .8rem;
+    padding: 0 .5rem;
+    color: var(--color-input-text);
+    cursor: text;
+    transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+}
+
+main.settings .settings__wrapper .right form .form__div .form__input:focus~.form__label {
+    top: -8px;
+    left: 15px;
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--color-navbar);
+    background: var(--blanco);
+}
+
+main.settings .settings__wrapper .right form .form__div .form__input:not(:placeholder-shown).form__input:not(:focus)~.form__label {
+    top: -8px;
+    left: 15px;
+    font-size: .8rem;
+    font-weight: 600;
+    background: var(--blanco);
+}
+
+main.settings .settings__wrapper .right .form:nth-of-type(2) .form__div {
+    grid-column-start: span 2;
+}
+
+@media screen and (max-width: 850px) {
+    main.settings .settings__wrapper .right form {
+        gap: 1rem;
+        row-gap: 2rem;
+    }
+
+    main.settings .settings__wrapper .right form .form__div {
+        height: 2rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    main.settings .settings__wrapper .right form {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    main.settings .settings__wrapper .right form .form__div.buttons,
+    main.settings .settings__wrapper .right form .form__div.textarea {
+        grid-column-start: span 1;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    main.settings .settings__wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        gap: .8rem;
+    }
+}

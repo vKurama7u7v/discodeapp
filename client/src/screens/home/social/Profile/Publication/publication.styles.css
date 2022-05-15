@@ -1,0 +1,389 @@
+@import url("../../../../../styles/const.css");
+
+main.publication {
+    padding: 1em;
+    position: relative;
+    min-height: calc(100vh - 5.5em);
+    margin-right: -3rem;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+main.publication .align-center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    padding: 1em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main.publication .card__publication {
+    background: var(--blanco);
+    box-shadow: 0px 0px 20px rgba(38, 38, 38, 0.6);
+    width: 100%;
+    max-width: 1000px;
+    min-height: 550px;
+    border-radius: .1em;
+}
+
+main.publication .card__publication .publication__wrapper {
+    display: grid;
+    grid-template-columns: calc(100% - 416px) 400px;
+    height: 550px;
+    gap: 1em;
+}
+
+.card__publication .publication__wrapper .left {
+    position: relative;
+    height: 550px;
+    border-radius: .1em 0 0 .1em;
+}
+
+.card__publication .publication__wrapper .left .cont__img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: .1em 0 0 .1em;
+}
+
+.card__publication .publication__wrapper .left .cont__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .9;
+}
+
+/* RIGHT */
+.card__publication .publication__wrapper .right {
+    position: relative;
+    padding: 2em 1.5em 1.5em .5em;
+}
+
+.card__publication .publication__wrapper .right .cont__profile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: .8em;
+}
+
+.card__publication .publication__wrapper .right .cont__profile .avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    outline: 3px solid var(--color-navbar);
+    overflow: hidden;
+}
+
+.card__publication .publication__wrapper .right .cont__profile .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card__publication .publication__wrapper .right .cont__profile .perfil {
+    line-height: 1em;
+}
+
+.card__publication .publication__wrapper .right .cont__profile .name {
+    font-weight: 600;
+    font-size: 1.1em;
+    letter-spacing: .3px;
+    color: var(--color-text);
+    transition: all 0.25s ease-in-out;
+}
+
+.card__publication .publication__wrapper .right .cont__profile .username {
+    color: var(--color-text);
+    opacity: .7;
+    font-size: 14.5px;
+}
+
+.card__publication .publication__wrapper .right .cont__profile:hover .name {
+    color: var(--color-navbar);
+}
+
+.card__publication .publication__wrapper .right .cont__description p {
+    margin: 0;
+    padding: 0;
+    margin: .5em 0;
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #262626;
+    opacity: 0.8;
+    font-family: var(--Font-Poppins);
+}
+
+.card__publication .publication__wrapper .right .cont__comentarios h3 {
+    font-weight: 600;
+    font-size: 17px;
+    color: var(--color-navbar);
+    line-height: 17px;
+    margin-bottom: .7em;
+}
+
+.card__publication .publication__wrapper .right .comentarios__wrapper {
+    width: 100%;
+    height: 280px;
+    text-align: left;
+    overflow-y: scroll;
+}
+
+.card__publication .publication__wrapper .right .comentarios__wrapper a.perfil {
+    color: #262626;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40px calc(100% - 40px);
+}
+
+.card__publication .publication__wrapper .right .comentarios__wrapper a.perfil {
+    border-bottom: 2px solid rgb(183, 183, 183, 0.5);
+    padding-bottom: .5em;
+    padding-right: 1em;
+    margin-bottom: .5em;
+    transition: all 0.25s ease-in-out;
+}
+
+.card__publication .publication__wrapper .right .comentarios__wrapper a.perfil:hover {
+    background: rgb(183, 183, 183, 0.2);
+}
+
+
+.card__publication .publication__wrapper .right .comentarios__wrapper .avatar {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    border: 3px solid var(--color-input-text-active);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.card__publication .publication__wrapper .right .comentarios__wrapper .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card__publication .publication__wrapper .right .comentarios__wrapper .comentario {
+    padding-left: .4em;
+}
+
+.card__publication .publication__wrapper .right .comentarios__wrapper .comentario .info {
+    display: flex;
+    justify-content: space-between;
+    line-height: 15px;
+}
+
+.card__publication .publication__wrapper .right .comentarios__wrapper .comentario span.name {
+    font-weight: 600;
+    font-size: 15px;
+    opacity: .9;
+    transition: all 0.3s ease-in-out;
+}
+
+.card__publication .publication__wrapper .right .comentarios__wrapper .comentario span.username {
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: .3px;
+    opacity: .8;
+}
+
+.card__publication .publication__wrapper .right .comentarios__wrapper .comentario span.fecha {
+    color: var(--color-text);
+    opacity: .7;
+    font-size: 13px;
+}
+
+.card__publication .publication__wrapper .right .comentarios__wrapper .comentario span.fecha i {
+    font-size: 15px;
+}
+
+.card__publication .publication__wrapper .right .comentarios__wrapper .perfil:hover .avatar {
+    border-color: var(--color-navbar);
+}
+
+.card__publication .publication__wrapper .right .comentarios__wrapper .perfil:hover .comentario span.name {
+    color: var(--color-navbar);
+}
+
+.card__publication .publication__wrapper .right .comentarios__wrapper p {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: .3em;
+    font-weight: 400;
+    opacity: .7;
+}
+
+.card__publication .publication__wrapper .right .likes {
+    position: absolute;
+    bottom: 4.2rem;
+}
+
+
+.card__publication .publication__wrapper .right .likes i:hover,
+.card__publication .publication__wrapper .right .likes.active i {
+    color: var(--color-g1-secondary);
+    text-shadow: 0px 0px 1px var(--color-g1-secondary);
+}
+
+.card__publication .publication__wrapper .right .likes span {
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+.card__publication .publication__wrapper .right .likes span span {
+    font-family: var(--Font-Poppins);
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+
+.card__publication .publication__wrapper .right .likes i {
+    font-size: 1.2em;
+    margin-right: .25em;
+}
+
+.card__publication .publication__wrapper .right .add__comentario {
+    margin-top: .25em;
+    height: 2.6em;
+    position: absolute;
+    bottom: 1.5em;
+}
+
+.card__publication .publication__wrapper .right .add__comentario form {
+    display: grid;
+    width: 100%;
+    grid-template-columns: calc(100% + 1.3em) 2.6em;
+    height: 2.6em
+}
+
+.card__publication .publication__wrapper .right .add__comentario form .reset {
+    border: none;
+    outline: none;
+    background: none;
+    font-family: var(--Font-Poppins);
+    height: 100%;
+}
+
+.card__publication .publication__wrapper .right .add__comentario form input.comment {
+    border: 2px solid var(--color-input-border);
+    color: var(--color-input-text-active);
+    border-radius: .5em;
+    padding-left: .5em;
+}
+
+.card__publication .publication__wrapper .right .add__comentario form input.comment:focus {
+    color: var(--color-input-text-active);
+}
+
+.card__publication .publication__wrapper .right .add__comentario form button.btn-comment {
+    border: none;
+    outline: none;
+    background: var(--color-g1-secondary);
+    color: var(--blanco);
+    box-shadow: 0px 0px 4px var(--color-g1-secondary);
+    border-radius: .5em;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.card__publication .publication__wrapper .right .add__comentario form button.btn-comment:hover {
+    box-shadow: 0px 0px 10px var(--color-g1-secondary);
+}
+
+@media screen and (max-width: 980px) {
+    main.publication .align-center {
+        position: relative;
+
+        padding: 1em;
+        display: block;
+    }
+
+    main.publication .card__publication {
+        box-shadow: 0px 0px 10px rgba(38, 38, 38, 0.6);
+        max-width: 100%;
+        height: 100%;
+        min-height: auto;
+        border-radius: .1em;
+    }
+
+    main.publication .card__publication .publication__wrapper {
+        display: block;
+        height: 100%;
+    }
+
+
+    .card__publication .publication__wrapper .left {
+        border-radius: .1em .1em 0 0;
+    }
+
+    .card__publication .publication__wrapper .left .cont__img {
+        border-radius: .1em .1em 0 0;
+    }
+
+    .card__publication .publication__wrapper .right {
+        position: relative;
+        padding: 1em 2em 2em;
+    }
+
+    .card__publication .publication__wrapper .right .comentarios__wrapper {
+        height: 200px;
+        margin-bottom: 2em;
+    }
+
+    /* .card__publication .publication__wrapper .right .likes {
+        margin-top: 1em;
+        bottom: ;
+    } */
+
+    .card__publication .publication__wrapper .right .add__comentario {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .card__publication .publication__wrapper .right .add__comentario form {
+        display: grid;
+        width: 100%;
+        grid-template-columns: calc(100% - 2.6em) 2.6em;
+        height: 2.6em
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main.publication {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main.publication .align-center {
+        padding: 0em;
+    }
+
+    .card__publication .publication__wrapper .left {
+        height: 300px
+    }
+
+    .card__publication .publication__wrapper .right {
+        padding: .5em 1em 1em;
+    }
+
+    .card__publication .publication__wrapper .right .comentarios__wrapper {
+        height: 150px;
+    }
+
+    .card__publication .publication__wrapper .right .likes {
+        bottom: 3.7em;
+    }
+}

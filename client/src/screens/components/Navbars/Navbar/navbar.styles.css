@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Numans&family=Oxanium:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=VT323&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* COLORES */
+    --color-body: #F3F6FD;
+    --color-navbar: #666DF8;
+    --blanco: #FFFFFF;
+
+    --color-input-bg: #F3F3F3;
+    --color-input-border: #B7B7B7;
+    --color-input-text: #A2A2A2;
+    --color-input-text-active: #66686F;
+
+    --color-amarillo: #FFDC39;
+    --amarillo: #E4A101;
+    --yellow: #ffbe1a;
+    --morado: #666DF8;
+    --verde: #c8ff0b;
+    --blue: #01abe9;
+    --twitter: #4ac7ec;
+    --dribbble: #ff5da0;
+    --success: #1ecab8;
+    --danger: #f1646c;
+    --azul: #4d79f8;
+
+    --naranja: #ffa260;
+    --amarisho: #e5ff60;
+    --rosa: #ef6eae;
+
+    /* GRADIENTE 1 */
+    --color-g1-primary: #408BEE;
+    --color-g1-secondary: #6B36F8;
+
+    /*GRADIENTE 2*/
+    --color-g2-primary: #FA9042;
+    --color-g2-secondary: #E1392E;
+
+    /*GRADIENTE 3*/
+    --color-g3-primary: #F87D5C;
+    --color-g3-secondary: #F65B75;
+
+    /* SOMBRAS */
+    --sombra-cont-login: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    --sombra-header: 0 0px 15px rgba(106, 54, 248, 0.5);
+    --sombra-submenu: 0 5px 30px #00000093;
+
+    /*NAVBAR MEDIDAS*/
+    --header-height: 85px;
+    --normal-font: 0.938rem;
+
+    /*FONTS*/
+    --Font-FiraCode: 'Fira Code', monospace;
+    --Font-IBMPlexSans: 'IBM Plex Sans', sans-serif;
+    --Font-LibreFranklin: 'Libre Franklin', sans-serif;
+    --Font-Mulish: 'Mulish', sans-serif;
+    --Font-Numans: 'Numans', sans-serif;
+    --Font-Oxanium: 'Oxanium', cursive;
+    --Font-Poppins: 'Poppins', sans-serif;
+    --Font-PressStart: 'Press Start 2P', cursive;
+    --Font-Prompt: 'Prompt', sans-serif;
+    --Font-Raleway: 'Raleway', sans-serif;
+    --Font-Rubik: 'Rubik', sans-serif;
+    --Font-SourceSans3: 'Source Sans 3', sans-serif;
+    --Font-Ubuntu: 'Ubuntu', sans-serif;
+    --Font-VT323: 'VT323', monospace;
+    --Font-WorkSans: 'Work Sans', sans-serif;
+}
+
+/*NAVBAR*/
+div.header-component {
+    position: relative;
+    /* z-index: 1; */
+    width: 100%;
+    padding: 2rem;
+}
+
+div.header-component.fixed {
+    position: fixed;
+}
+
+header.header {
+    width: 100%;
+    height: var(--header-height);
+    background: var(--color-g1-secondary);
+    color: var(--blanco);
+    font-family: var(--Font-Raleway);
+    box-shadow: var(--sombra-header);
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+header.header a {
+    text-decoration: none;
+}
+
+header.header li {
+    list-style-type: none;
+}
+
+header.header .header__logo {
+    height: var(--header-height);
+    line-height: var(--header-height);
+    padding: 0px 40px;
+    font-size: 1rem;
+}
+
+header.header .header__logo h1 a {
+    font-weight: 700;
+    color: var(--blanco);
+    letter-spacing: 1.5px;
+}
+
+header.header .bd-grid {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header.header .header__toggle {
+    font-size: 2.5rem;
+    cursor: pointer;
+    line-height: var(--header-height);
+    color: var(--blanco);
+    display: none;
+    transition: all 0.3s ease-in-out;
+    margin-right: 20px;
+}
+
+header.header .header__toggle:hover {
+    color: var(--color-amarillo);
+}
+
+nav.nav {
+    box-sizing: border-box;
+}
+
+nav.nav .nav__content {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav.nav .nav__content .nav__menu {
+    position: relative;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0px 30px;
+    height: var(--header-height);
+
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav.nav .nav__content .nav__list {
+    display: inline-flex;
+}
+
+nav.nav .nav__content .nav__list .nav__item {
+    margin-left: 1.5rem;
+}
+
+nav.nav .nav__content .nav__list .nav__item .nav__link {
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 0.6em;
+    transition: all 0.25s ease-in-out;
+}
+
+nav.nav .nav__content .nav__list .nav__item .nav__link:hover {
+    color: var(--color-amarillo);
+}
+
+nav.nav .nav__content .nav__list .nav__item .nav__link.link__design {
+    outline: 2.5px solid var(--blanco);
+    border-radius: 4px;
+}
+
+nav.nav .nav__content .nav__list .nav__item .nav__link.link__design:hover {
+    outline: 2px solid var(--color-amarillo);
+}

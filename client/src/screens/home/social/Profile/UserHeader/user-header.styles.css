@@ -1,0 +1,146 @@
+@import url("../../../../../styles/const.css");
+
+button.reset {
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-right: .8em;
+    padding: 0.5rem 2em;
+}
+
+button.btn-primary {
+    font-family: var(--Font-Raleway);
+    background: var(--color-g1-secondary);
+    color: var(--blanco);
+    border-radius: 5px;
+    font-weight: 600;
+    font-family: 1.1rem;
+}
+
+button.btn-secondary {
+    font-family: var(--Font-Raleway);
+    background: var(--btn-secondary);
+    color: var(--blanco);
+    border-radius: 5px;
+    font-weight: 600;
+    font-family: 1.1rem;
+}
+
+button.btn-danger {
+    font-family: var(--Font-Raleway);
+    background: var(--danger);
+    color: var(--blanco);
+    border-radius: 5px;
+    font-weight: 600;
+    font-family: 1.1rem;
+}
+
+button.width-100 {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1em;
+}
+
+.header-gamertag {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width: 630px) {
+    .header-gamertag {
+        display: block;
+    }
+
+    .header-gamertag .gamertag-options {
+        margin-top: .8rem;
+    }
+}
+
+.body-sweetAlert {
+    width: 100%;
+    max-height: 250px;
+}
+
+.body-sweetAlert .wrapper-sweetAlert {
+    width: 100%;
+    height: 100%;
+}
+
+.body-sweetAlert .wrapper-sweetAlert ul.listUsers {
+    text-align: left;
+    padding: .5em;
+    background: #e7e7e7;
+}
+
+.body-sweetAlert .wrapper-sweetAlert ul.listUsers li {
+    list-style: none;
+    background: var(--blanco);
+    width: 100%;
+    cursor: pointer;
+    border-radius: 3px;
+
+    margin-bottom: 0.3em;
+    position: relative;
+}
+
+.body-sweetAlert .wrapper-sweetAlert ul.listUsers li .item-username {
+    display: flex;
+    align-items: center;
+    padding: .5em;
+    gap: 1em;
+    margin-top: -1.5em;
+    position: relative;
+    z-index: 1;
+}
+
+.body-sweetAlert .wrapper-sweetAlert ul.listUsers li:nth-child(1) {
+    margin-top: 1.5em;
+}
+
+.body-sweetAlert .wrapper-sweetAlert ul.listUsers li:nth-last-of-type(1) {
+    margin-bottom: 0;
+}
+
+.body-sweetAlert .wrapper-sweetAlert ul.listUsers li .item-username .avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+    outline: 4px solid var(--color-g1-secondary);
+}
+
+.body-sweetAlert .wrapper-sweetAlert ul.listUsers li .item-username .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    text-align: center;
+}
+
+.body-sweetAlert .wrapper-sweetAlert ul.listUsers li .item-username .info-user {
+    line-height: 16px;
+}
+
+
+.body-sweetAlert .wrapper-sweetAlert ul.listUsers li .item-username .info-user span.name {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-texto);
+}
+
+.body-sweetAlert .wrapper-sweetAlert ul.listUsers li .item-username .info-user span.username {
+    font-size: 14px;
+    color: var(--color-navbar);
+}
+
+.body-sweetAlert .wrapper-sweetAlert ul.listUsers li h3 {
+    text-align: center;
+    padding: .5em 0;
+    font-size: 18px;
+    font-weight: 700;
+    opacity: .8;
+}

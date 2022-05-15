@@ -1,0 +1,103 @@
+@import url("../../../../styles/const.css");
+
+main.main__sandbox {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: calc(70vh);
+}
+
+.main__sandbox .header__sandbox {
+    padding: 0em 1em;
+    background: var(--blanco);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(38, 38, 38, 0.3);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: .5em;
+    margin-bottom: 1.5em;
+}
+
+.main__sandbox .header__sandbox h1 {
+    color: var(--color-titles);
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.main__sandbox .header__sandbox .options {
+    display: flex;
+    gap: .7em;
+}
+
+.main__sandbox .header__sandbox .options button {
+    border: none;
+    outline: none;
+    height: 2.5em;
+    padding: 0 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    border: 2px solid transparent;
+    font-family: var(--Font-Poppins);
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+.main__sandbox .header__sandbox .options button#delete {
+    background: var(--color-input-bg);
+    border-color: var(--color-input-border);
+}
+
+.main__sandbox .header__sandbox .options button#delete:hover {
+    background: var(--danger);
+    border-color: var(--dribbble);
+    color: var(--blanco);
+    box-shadow: 0px 0px 4px var(--danger);
+}
+
+.main__sandbox .header__sandbox .options button#edit {
+    background: var(--edit);
+    color: var(--color-texto);
+    border-color: var(--edit);
+}
+
+.main__sandbox .header__sandbox .options button#edit:hover {
+    box-shadow: 0px 0px 4px var(--edit);
+}
+
+
+.main__sandbox .header__sandbox .options button#save {
+    background: var(--color-navbar);
+    border-color: var(--color-navbar);
+    color: var(--blanco);
+}
+
+.main__sandbox .header__sandbox .options button#save:hover {
+    background: var(--blue);
+    border-color: var(--blue);
+    box-shadow: 0px 0px 4px var(--blue);
+    color: var(--color-dark-content);
+}
+
+.main__sandbox .compiler {
+    height: 100%;
+    padding: 1em;
+    border-radius: 10px;
+    background: var(--blanco);
+    box-shadow: 0px 0px 15px rgba(38, 38, 38, 0.3);
+}
+
+.main__sandbox .compiler .codesandbox {
+    position: relative;
+    height: 100%;
+}
+
+.main__sandbox .compiler .codesandbox div {
+    font-size: 5rem;
+    font-family: var(--Font-FiraCode);
+}

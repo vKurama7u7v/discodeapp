@@ -1,0 +1,12 @@
+@import url("../../../../../../styles/const.css");
+
+#compilador {
+    background: #fff;
+    padding: .5em;
+    border-radius: 6px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+}
+
+#compiler__leccion {
+    height: 60vh;
+}

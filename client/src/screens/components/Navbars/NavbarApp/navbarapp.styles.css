@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Numans&family=Oxanium:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=VT323&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* COLORES */
+    --color-body: #F3F6FD;
+    --color-navbar: #666DF8;
+    --blanco: #FFFFFF;
+
+    --color-input-bg: #F3F3F3;
+    --color-input-border: #B7B7B7;
+    --color-input-text: #A2A2A2;
+    --color-input-text-active: #66686F;
+
+    --color-amarillo: #FFDC39;
+    --amarillo: #E4A101;
+    --yellow: #ffbe1a;
+    --morado: #666DF8;
+    --verde: #c8ff0b;
+    --blue: #01abe9;
+    --twitter: #4ac7ec;
+    --dribbble: #ff5da0;
+    --success: #1ecab8;
+    --danger: #f1646c;
+    --azul: #4d79f8;
+
+    --naranja: #ffa260;
+    --amarisho: #e5ff60;
+    --rosa: #ef6eae;
+
+    --first-color: #6923D0;
+    --first-color-light: #F4F0FA;
+    --title-color: #19181B;
+    --text-color: #58555E;
+    --text-color-light: #A5A1AA;
+    --body-color: #F9F6FD;
+    --container-color: #FFFFFF;
+
+    /* GRADIENTE 1 */
+    --color-g1-primary: #408BEE;
+    --color-g1-secondary: #6B36F8;
+
+    /*GRADIENTE 2*/
+    --color-g2-primary: #FA9042;
+    --color-g2-secondary: #E1392E;
+
+    /*GRADIENTE 3*/
+    --color-g3-primary: #F87D5C;
+    --color-g3-secondary: #F65B75;
+
+    /* SOMBRAS */
+    --sombra-cont-login: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    --sombra-header: 0 0px 15px rgba(106, 54, 248, 0.5);
+    --sombra-submenu: 0 5px 30px #00000093;
+
+    /*NAVBAR MEDIDAS*/
+    --header-height: 3.5rem;
+    --nav-width: 219px;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.75rem;
+    --smaller-font-size: 0.75rem;
+
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    --z-fixed: 100;
+
+    /*FONTS*/
+    --Font-FiraCode: 'Fira Code', monospace;
+    --Font-IBMPlexSans: 'IBM Plex Sans', sans-serif;
+    --Font-LibreFranklin: 'Libre Franklin', sans-serif;
+    --Font-Mulish: 'Mulish', sans-serif;
+    --Font-Numans: 'Numans', sans-serif;
+    --Font-Oxanium: 'Oxanium', cursive;
+    --Font-Poppins: 'Poppins', sans-serif;
+    --Font-PressStart: 'Press Start 2P', cursive;
+    --Font-Prompt: 'Prompt', sans-serif;
+    --Font-Raleway: 'Raleway', sans-serif;
+    --Font-Rubik: 'Rubik', sans-serif;
+    --Font-SourceSans3: 'Source Sans 3', sans-serif;
+    --Font-Ubuntu: 'Ubuntu', sans-serif;
+    --Font-VT323: 'VT323', monospace;
+    --Font-WorkSans: 'Work Sans', sans-serif;
+}
+
+@media screen and (min-width: 1024px) {
+    :root {
+        --normal-font-size: 1rem;
+        --small-font-size: 0.875rem;
+        --smaller-fonr-size: 0.813rem
+    }
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+h3 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img.header__img {
+    max-width: 100%;
+    height: auto;
+}
+
+header.header__navbarapp,
+div.nav__navbarapp {
+    font-family: var(--Font-Poppins);
+}
+
+/*========== HEADER ==========*/
+header.header__navbarapp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--color-navbar);
+    box-shadow: var(--sombra-header);
+    padding: 0 1rem;
+    z-index: var(--z-fixed);
+
+}
+
+header.header__navbarapp .header__container {
+    display: flex;
+    align-items: center;
+    height: var(--header-height);
+    justify-content: space-between;
+}
+
+header.header__navbarapp .dashboard-right .perfil__img {
+    width: 43px;
+    height: 43px;
+    background: var(--container-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.25s ease-in-out;
+}
+
+header.header__navbarapp .dashboard-right .perfil__img-cont {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+header.header__navbarapp .dashboard-right .perfil__img .perfil__img-cont .header__img {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    text-align: center;
+}
+
+header.header__navbarapp .dashboard-right .profile__icon {
+    font-size: 1.25rem;
+    color: var(--blanco);
+}
+
+
+header.header__navbarapp .dashboard-right .avatar-arrow-down {
+    position: absolute;
+    right: -20px;
+    top: 10px;
+    transition: all 0.25s ease-in-out;
+}
+
+header.header__navbarapp .dashboard-right ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+header.header__navbarapp .dashboard-right ul li {
+    position: relative;
+}
+
+header.header__navbarapp .dashboard-right ul li a {
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+
+header.header__navbarapp .dashboard-right a {
+    text-align: right;
+}
+
+header.header__navbarapp .dashboard-right p {
+    margin-right: 10px;
+    color: #FFFFFF;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 500;
+    transition: all 0.25s ease-in-out;
+}
+
+header.header__navbarapp .dashboard-right a p span {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+header.header__navbarapp .dashboard-right i {
+    color: #FFFFFF;
+}
+
+header.header__navbarapp .dashboard-right ul li .perfil__dropdown {
+    position: absolute;
+    top: 55px;
+    right: 0;
+    width: 200px;
+    background: #FFFFFF;
+    box-shadow: var(--sombra-cont-login);
+    border-radius: 5px;
+    display: none;
+}
+
+header.header__navbarapp .dashboard-right ul li .perfil__dropdown ul {
+    margin: 0;
+    padding: 10px;
+}
+
+header.header__navbarapp .dashboard-right ul li .perfil__dropdown a {
+    color: #262626;
+    font-weight: 500;
+    transition: all 0.25s ease-in-out;
+}
+
+header.header__navbarapp .dashboard-right ul li .perfil__dropdown i {
+    transition: all 0.25s ease-in-out;
+    margin-right: 5px;
+    font-size: 1.5rem;
+    color: #262626;
+}
+
+header.header__navbarapp .dashboard-right ul li .perfil__dropdown ul li:hover i,
+header.header__navbarapp .dashboard-right ul li .perfil__dropdown ul li:hover a {
+    color: var(--color-g1-secondary);
+}
+
+header.header__navbarapp .dashboard-right ul li .perfil__dropdown:before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 10px solid;
+    border-color: transparent transparent #fff transparent
+}
+
+header.header__navbarapp .dashboard-right:hover p {
+    color: var(--color-amarillo);
+}
+
+header.header__navbarapp .dashboard-right:hover .perfil__img {
+    background: var(--color-amarillo);
+}
+
+header.header__navbarapp .dashboard-right:hover .avatar-arrow-down {
+    transform: rotate(90deg);
+    color: var(--color-amarillo);
+}
+
+header.header__navbarapp .dashboard-right:hover ul li .perfil__dropdown {
+    display: block;
+}
+
+header.header__navbarapp .header__logo {
+    font-family: var(--Font-Raleway);
+    color: var(--body-color);
+    font-weight: 700;
+    display: none;
+}
+
+header.header__navbarapp .header__search {
+    display: flex;
+    padding: .40rem .75rem;
+    background: #F4F0FA;
+    border-radius: .25rem;
+}
+
+header.header__navbarapp .header__input {
+    font-family: var(--Font-Rubik);
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #F4F0FA;
+}
+
+header.header__navbarapp .header__input::placeholder {
+    font-family: var(--body-font);
+    color: var(--text-color);
+}
+
+header.header__navbarapp .header__icon,
+header.header__navbarapp .header__toggle {
+    font-size: 1.2rem;
+}
+
+header.header__navbarapp .header__toggle {
+    color: var(--body-color);
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+header.header__navbarapp .header__toggle:hover {
+    color: var(--color-amarillo);
+}
+
+/*========== NAV ==========*/
+div.nav__navbarapp {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    padding: 1rem 1rem 0;
+    background-color: var(--color-g1-secondary);
+    box-shadow: var(--sombra-header);
+    z-index: var(--z-fixed);
+    transition: .4s;
+}
+
+div.nav__navbarapp .nav__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+div.nav__navbarapp .nav__container::-webkit-scrollbar {
+    display: none;
+}
+
+div.nav__navbarapp .nav__logo {
+    font-weight: var(--font-semi-bold);
+    margin-bottom: 2.5rem;
+}
+
+div.nav__navbarapp .nav__list,
+div.nav__navbarapp .nav__items {
+    display: grid;
+}
+
+div.nav__navbarapp .nav__list {
+    row-gap: 2.5rem;
+}
+
+div.nav__navbarapp .nav__items {
+    row-gap: 1.5rem;
+}
+
+div.nav__navbarapp .nav__subtitle {
+    font-size: var(--normal-font-size);
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: var(--blanco);
+}
+
+div.nav__navbarapp .nav__link {
+    display: flex;
+    align-items: center;
+    color: var(--color-body);
+    opacity: 0.95;
+    transition: .4s;
+}
+
+div.nav__navbarapp .nav__link:hover {
+    opacity: 1;
+    color: var(--color-amarillo);
+}
+
+div.nav__navbarapp .nav__icon {
+    font-size: 1.2rem;
+    margin-right: .5rem;
+}
+
+div.nav__navbarapp .nav__name {
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+    white-space: nowrap;
+}
+
+div.nav__navbarapp .nav__logout {
+    margin-top: 5rem;
+}
+
+/* Dropdown */
+div.nav__navbarapp .nav__dropdown {
+    overflow: hidden;
+    max-height: 21px;
+    transition: .4s ease-in-out;
+}
+
+div.nav__navbarapp .nav__dropdown-collapse {
+    background-color: var(--first-color-light);
+    border-radius: .25rem;
+    margin-top: 1rem;
+}
+
+div.nav__navbarapp .nav__dropdown-content {
+    display: grid;
+    row-gap: .5rem;
+    padding: .75rem 2.5rem .75rem 1.8rem;
+}
+
+div.nav__navbarapp .nav__dropdown-item {
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-medium);
+    color: var(--text-color);
+}
+
+div.nav__navbarapp .nav__dropdown-item:hover {
+    color: var(--color-g1-secondary);
+}
+
+div.nav__navbarapp .nav__dropdown-icon {
+    margin-left: auto;
+    transition: .4s;
+}
+
+div.nav__navbarapp .nav__dropdown:hover {
+    max-height: 100rem;
+}
+
+div.nav__navbarapp .nav__dropdown:hover .nav__dropdown-icon {
+    transform: rotate(180deg);
+}
+
+div.nav__navbarapp .nav__logo {
+    color: var(--blanco);
+    opacity: 1;
+}
+
+/*===== Ver Menú =====*/
+div.nav__navbarapp.show-navbarapp {
+    left: 0;
+}
+
+/*===== Link Modo Activado =====*/
+div.nav__navbarapp .active {
+    opacity: 1;
+    color: var(--color-amarillo);
+}
+
+/* ========== MEDIA QUERIES ==========*/
+@media screen and (max-width: 320px) {
+    header.header__navbarapp .header__search {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    div.cuerpo.header__navbarapp-cuerpo {
+        padding: 1rem 3rem 0 6rem;
+    }
+
+    header.header__navbarapp {
+        padding: 0 3rem 0 6rem;
+    }
+
+    header.header__navbarapp .header__container {
+        height: calc(var(--header-height) + .5rem);
+    }
+
+    header.header__navbarapp .header__search {
+        width: 300px;
+        padding: .55rem .75rem;
+    }
+
+    header.header__navbarapp .header__toggle {
+        display: none;
+    }
+
+    header.header__navbarapp .header__logo {
+        display: block;
+    }
+
+    /* header.header__navbarapp .header__img {
+        width: 40px;
+        height: 40px;
+        order: 1;
+    } */
+
+    div.nav__navbarapp {
+        left: 0;
+        padding: 1.2rem 1.5rem 0;
+        width: 75px;
+    }
+
+    div.nav__navbarapp .nav__items {
+        row-gap: 1.7rem;
+    }
+
+    div.nav__navbarapp .nav__icon {
+        font-size: 1.3rem;
+    }
+
+    div.nav__navbarapp .nav__logo-name,
+    div.nav__navbarapp .nav__name,
+    div.nav__navbarapp .nav__subtitle,
+    div.nav__navbarapp .nav__dropdown-icon {
+        opacity: 0;
+        transition: .3s;
+    }
+
+    div.nav__navbarapp:hover {
+        width: var(--nav-width);
+    }
+
+    div.nav__navbarapp:hover .nav__logo-name {
+        opacity: 1;
+    }
+
+    div.nav__navbarapp:hover .nav__subtitle {
+        opacity: 1;
+    }
+
+    div.nav__navbarapp:hover .nav__name {
+        opacity: 1;
+    }
+
+    div.nav__navbarapp:hover .nav__dropdown-icon {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header.header__navbarapp .dashboard-right {
+        padding: 0;
+    }
+
+    header.header__navbarapp .dashboard-right ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    header.header__navbarapp .header__container {
+        display: flex;
+    }
+
+    header.header__navbarapp .header__container div:nth-of-type(2) {
+        order: 1;
+    }
+
+    header.header__navbarapp .header__container div:nth-of-type(1) {
+        order: 2;
+    }
+
+    header.header__navbarapp .header__container div:nth-of-type(3) {
+        order: 3;
+    }
+
+    header.header__navbarapp .dashboard-right p {
+        display: none;
+    }
+
+    header.header__navbarapp .dashboard-right ul li .perfil__dropdown {
+        left: 0px;
+        top: 50px;
+    }
+
+    header.header__navbarapp .dashboard-right ul li .perfil__dropdown:before {
+        left: 20px;
+    }
+}

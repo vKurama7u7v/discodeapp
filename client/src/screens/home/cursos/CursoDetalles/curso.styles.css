@@ -1,0 +1,196 @@
+@import url("../../../../styles/const.css");
+
+
+
+main.main__curso ul {
+    list-style-type: none;
+}
+
+main.main__curso {
+    position: relative;
+    background: var(--blanco);
+    box-shadow: 0px 0px 10px rgb(38, 38, 38, .5);
+    border-radius: 5px;
+    padding: .8em 8em;
+    margin-right: -2.5em;
+    height: auto;
+    min-height: calc(100vh - 6em);
+}
+
+.main__curso .curso__content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main__curso .curso__content .wrapper {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 1em;
+}
+
+.main__curso .curso__content .wrapper .left {
+    line-height: 0;
+}
+
+.main__curso .curso__content .wrapper .left h2.titulo {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 1.4em;
+}
+
+.main__curso .curso__content .wrapper .left span.categoria {
+    border: 2px solid var(--color-navbar);
+    border-radius: 5px;
+    padding: .2em .7em;
+    color: var(--color-navbar);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.main__curso .curso__content .wrapper .left p.descripcion {
+    padding-top: 1em;
+    font-size: 1em;
+    line-height: 1.4em;
+    font-family: var(--Font-Poppins);
+    font-weight: 400;
+    color: #262626;
+    opacity: .7;
+}
+
+
+.main__curso .curso__content .wrapper .right {
+    width: 100%;
+}
+
+.main__curso .curso__content .wrapper .right .thumbnail {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    text-align: center;
+    background: rgba(244, 244, 244, 0.7);
+}
+
+.main__curso .curso__content .wrapper .right .thumbnail img {
+    /* width: 100%; */
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.main__curso .curso__content .temario__section {
+    width: 100%;
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.main__curso .curso__content .temario__section * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main__curso .curso__content .temario__section .accordion {
+    width: 80%;
+    min-width: 500px;
+}
+
+.main__curso .curso__content .temario__section .accordion-item .accordion-link {
+    padding: .6em .8em;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: .5px;
+
+    cursor: pointer;
+    border-radius: 2px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #DEE4FE;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    color: rgba(38, 38, 38, 0.5);
+    margin-bottom: .25em;
+    transition: all 0.1s ease-in-out;
+}
+
+.main__curso .curso__content .temario__section .accordion-item.active .accordion-link {
+    background: linear-gradient(160deg, var(--color-g1-primary), var(--color-g1-secondary));
+    box-shadow: rgb(72, 0, 255) 0px 25px 8px -20px;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.main__curso .curso__content .temario__section .accordion-item.active .accordion-link i {
+    transform: rotate(45deg);
+    transition: all 0.25s ease-in-out;
+}
+
+.main__curso .curso__content .temario__section .accordion-item.active .accordion-link i:hover {
+    color: var(--color-amarillo)
+}
+
+.main__curso .curso__content .temario__section .accordion-item .accordion-content {
+    margin: 0 1em;
+    background-color: rgba(244, 244, 244, 0.7);
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    padding: .6em .3em;
+
+    display: none;
+    opacity: 0;
+
+    transition: all 0.25s ease-in-out;
+}
+
+.main__curso .curso__content .temario__section .accordion-item.active .accordion-content {
+    display: block;
+    opacity: 1;
+}
+
+.main__curso .curso__content .temario__section .accordion-content ul {
+    padding: .5em 1em;
+    border-left: 4px dotted var(--color-input-border);
+    margin-left: 1.5em;
+    transition: all 0.25s ease-in-out;
+}
+
+.main__curso .curso__content .temario__section .accordion-content ul li a {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    padding: .25em 0em;
+    transition: all 0.25s ease-in-out;
+    color: var(--color-text);
+}
+
+.main__curso .curso__content .temario__section .accordion-content ul li a h3 {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.main__curso .curso__content .temario__section .accordion-content ul li a .vinyeta {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: rgb(244, 244, 244);
+    border: 5px solid var(--color-input-border);
+    border-radius: 50%;
+    top: 9px;
+    left: -24.5px;
+    transition: all 0.25s ease-in-out;
+}
+
+.main__curso .curso__content .temario__section .accordion-content ul li a:hover {
+    color: var(--color-navbar);
+}
+
+.main__curso .curso__content .temario__section .accordion-content ul li a:hover .vinyeta {
+    border-color: var(--color-navbar);
+}

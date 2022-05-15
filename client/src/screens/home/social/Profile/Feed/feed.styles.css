@@ -1,0 +1,126 @@
+@import url("../../../../../styles/const.css");
+
+#NewPost {
+    background: var(--color-g1-secondary);
+    color: var(--blanco);
+    box-shadow: 0px 0px 2px #262626;
+    padding: .5em 1em;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    transition: all 0.25s ease-in-out;
+
+    outline: none;
+    border: none;
+    font-family: var(--Font-Raleway);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+}
+
+#NewPost i {
+    margin-left: .5em;
+    transition: all 0.25s ease-in-out;
+}
+
+#NewPost:hover {
+    color: var(--color-amarillo);
+    box-shadow: 0px 0px 5px var(--color-navbar);
+}
+
+#NewPost:hover i {
+    transform: rotate(90deg);
+}
+
+input.dropzone[type="file"] {
+    height: 160px;
+    display: flex;
+    cursor: pointer;
+    border-radius: 5px;
+    background: rgb(102, 109, 248, .1);
+    border: 3px dashed var(--color-input-border);
+
+    transition: all 0.25s ease-in-out;
+
+    line-height: 16.5rem;
+    text-align: center;
+    font-size: .9em;
+    text-align: center;
+}
+
+input.dropzone[type="file"]::file-selector-button {
+    border: none;
+    outline: none;
+    content: "";
+    color: transparent;
+    font-size: 0em;
+    letter-spacing: 0;
+    margin: 0;
+    background: none;
+}
+
+input.dropzone[type="file"]:hover {
+    border-color: var(--color-g1-secondary);
+    background: rgb(102, 109, 248, .2);
+}
+
+.input-dropzone {
+    background: none;
+    visibility: inherit;
+    position: absolute;
+    opacity: .5;
+    left: 50%;
+    z-index: -999;
+    transform: translate(-50%, 25%);
+}
+
+.input-dropzone i {
+    font-size: 50px;
+}
+
+.input-dropzone p {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.post-sweetAlert {
+    margin-top: 1.2em;
+}
+
+.post-sweetAlert .post-swal__cont-img {
+    height: 200px;
+    border-radius: .5em;
+    overflow: hidden;
+    border: 2px solid var(--color-input-border);
+}
+
+.post-sweetAlert .post-swal__cont-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.post-sweetAlert .post-swal__description {
+    text-align: left;
+    font-size: 16px;
+    font-family: var(--Font-Poppins);
+}
+
+.swal2-input-label {
+    margin: .2em 0 .4em 0;
+    font-weight: 600;
+    color: var(--color-g1-secondary);
+}
+
+.swal2-textarea {
+    height: 5em;
+    margin-top: 0;
+    font-size: 1em;
+    font-family: var(--Font-Poppins);
+    letter-spacing: 0.2px
+}
+
+.swal2-textarea::placeholder {
+    color: var(--color-text);
+}

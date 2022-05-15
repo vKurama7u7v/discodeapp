@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Numans&family=Oxanium:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=VT323&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --blanco: #FFFFFF;
+    --text-color: #58555E;
+    --color-body: #F3F6FD;
+    --header-height: 3.5rem;
+    --normal-font-size: 0.938rem;
+    --Font-Poppins: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--color-body);
+}
+
+div.header__navbarapp-cuerpo {
+    font-family: var(--Font-Poppins);
+    margin: var(--header-height) 0rem 0rem -1rem;
+    padding: 0;
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+}
+
+@media screen and (max-width: 768px) {
+    div.header__navbarapp-cuerpo {
+        margin: calc(var(--header-height) + .5rem) 0 0 0;
+    }
+}
+
+main.bg-card {
+    background: var(--blanco);
+    box-shadow: 0px 0px 10px rgba(38, 38, 38, 0.4);
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+main.pd-1 {
+    padding: 1rem;
+}
+
+.bg-light {
+    background: var(--blanco);
+    box-shadow: 0px 0px 10px rgba(38, 38, 38, 0.25);
+    border-radius: 4px;
+}

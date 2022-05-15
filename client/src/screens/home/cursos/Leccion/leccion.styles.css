@@ -1,0 +1,137 @@
+@import url("../../../../styles/const.css");
+
+main.main__leccion {
+    position: relative;
+    padding: 0em;
+    margin-right: -2.5em;
+    height: auto;
+    min-height: calc(100vh - 6em);
+}
+
+main.main__leccion * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main.main__leccion button.reset {
+    outline: none;
+    border: none;
+    background: none;
+    font-family: var(--Font-Poppins);
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+.main__leccion .leccion__content {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+.main__leccion .card {
+    width: 100%;
+    max-width: 900px;
+    position: relative;
+}
+
+.main__leccion .card .card-body {
+    padding: 1em;
+}
+
+.main__leccion .card .card-body .navbar-leccion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: .5em;
+    margin-bottom: 2em;
+    list-style-type: none;
+
+    background: var(--blanco);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    position: relative;
+}
+
+.main__leccion .card .card-body .navbar-leccion a.close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: var(--color-navbar);
+    font-size: 2em;
+
+    transition: all 0.25s ease-in-out;
+}
+
+.main__leccion .card .card-body .navbar-leccion a.close:hover {
+    color: var(--danger);
+}
+
+.main__leccion .card .card-body .navbar-leccion li:nth-of-type(1) {
+    margin-right: .5em;
+
+}
+
+.main__leccion .card .card-body .navbar-leccion li button.tab {
+    display: block;
+    padding: 12px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-navbar);
+    border-radius: 4px;
+    text-transform: capitalize;
+    letter-spacing: .5px;
+    transition: all 0.15s ease-in-out;
+}
+
+.main__leccion .card .card-body .navbar-leccion li button.tab:hover {
+    background: var(--color-body);
+}
+
+.main__leccion .card .card-body .navbar-leccion li button.tab.active {
+    color: var(--blanco);
+    background: var(--color-navbar);
+    box-shadow: 0px 0px 5px var(--color-navbar);
+}
+
+.main__leccion .card .card-body .navbar-leccion li button.tab span.icon {
+    display: none;
+}
+
+.main__leccion .card .card-body .navbar-leccion li button.tab span.text {
+    display: block;
+}
+
+.main__leccion .card .card-body .tab-content {
+    padding: 0px;
+    /* background: rgb(0, 0, 0, 0.1) */
+}
+
+.main__leccion .card .card-body .tab-content .tab-pane {
+    display: none;
+}
+
+.main__leccion .card .card-body .tab-content .tab-pane.active {
+    display: block;
+}
+
+.main__leccion section.slider-progress {
+    width: 100%;
+}
+
+.main__leccion section.slider-progress .grid__progress {
+    gap: .2em;
+    margin-bottom: .8em;
+}
+
+.main__leccion section.slider-progress .grid__progress .item {
+    height: 10px;
+    background: var(--btn-light);
+    border-radius: 50em;
+    transition: all 0.25s ease-in-out;
+}
+
+.main__leccion section.slider-progress .grid__progress .item.active {
+    background-color: var(--color-navbar);
+    box-shadow: 0 0 5px var(--color-navbar);
+}
